@@ -16,7 +16,6 @@
  * On the other hand, with the Decorator pattern the interface either stays the same or gets extended.
  * In addition, Decorator supports recursive composition, which isn’t possible when you use Adapter.
  *
- *
  */
 
 
