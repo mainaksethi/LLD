@@ -5,7 +5,7 @@ public class GameManager {
 
     private Piece[][] board;
 
-    private Map<Color, Player> colorPlayerMap;
+    private Map<SNLColor, SNLPlayer> colorPlayerMap;
 
     private List<Move> move_history;
 
@@ -44,7 +44,8 @@ public class GameManager {
     }
 
     private List<Position> getPossiblePositions(Piece piece) {
-
+        // Returned for compiling the code
+        return null;
     }
 
 }

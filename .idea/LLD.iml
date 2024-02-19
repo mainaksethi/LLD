@@ -7,7 +7,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Chess/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java_Collections_Scratch_Pad/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Ride_Sharing_App/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EventCalendarFlipKart/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StockExchange/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Arpit_Bhayani_Bounded_Buffer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SnakesAndLadders/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

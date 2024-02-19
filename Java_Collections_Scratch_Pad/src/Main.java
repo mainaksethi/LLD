@@ -27,13 +27,13 @@ public class Main {
         pq.poll();
         System.out.println("Heaps top element after removing 10: " + pq.peek());
         // Linked-List
-        LinkedList<Integer> ll = new LinkedList<>();
-        ll.add(1);
-        ll.add(2);
-        System.out.println("Linked List First Element: " + ll.getFirst());
-        System.out.println("Linked List Last Element: " + ll.getLast());
-        ll.poll();
-        System.out.println("Linked List Last Element after removing first element: " + ll.getFirst());
+//        ThreadSafeLinkedList<Integer> ll = new ThreadSafeLinkedList<>();
+//        ll.add(1);
+//        ll.add(2);
+//        System.out.println("Linked List First Element: " + ll.getFirst());
+//        System.out.println("Linked List Last Element: " + ll.getLast());
+//        ll.poll();
+//        System.out.println("Linked List Last Element after removing first element: " + ll.getFirst());
         // Set
         // HashSet
         Set<Integer> hashSet = new HashSet<>();
