@@ -5,7 +5,7 @@ public class GameManager {
 
     private Piece[][] board;
 
-    private Map<SNLColor, SNLPlayer> colorPlayerMap;
+    private Map<Color, Player> colorPlayerMap;
 
     private List<Move> move_history;
 

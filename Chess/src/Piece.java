@@ -2,11 +2,11 @@ public class Piece {
 
     private PieceType pieceType;
 
-    private SNLColor color;
+    private Color color;
 
     private boolean isKilled = false;
 
-    public Piece(PieceType pieceType, SNLColor color, boolean isKilled) {
+    public Piece(PieceType pieceType, Color color, boolean isKilled) {
         this.pieceType = pieceType;
         this.color = color;
         this.isKilled = isKilled;
@@ -20,11 +20,11 @@ public class Piece {
         this.pieceType = pieceType;
     }
 
-    public SNLColor getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(SNLColor color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

@@ -10,7 +10,9 @@
       <sourceFolder url="file://$MODULE_DIR$/EventCalendarFlipKart/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StockExchange/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Arpit_Bhayani_Bounded_Buffer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ludo/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SnakesAndLadders/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Splitwise/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
