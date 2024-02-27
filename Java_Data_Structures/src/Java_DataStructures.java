@@ -203,5 +203,18 @@ class Scratch {
             }
             System.out.println();
         }
+
+        // C++ String => Java String
+
+        String s = new String("mainak");
+
+        // sorting a string
+
+        char[] charArray = s.toCharArray();
+        Arrays.sort(charArray);
+
+        String sortedString = new String(charArray);
+
+        System.out.println("Printing sorted string: " + sortedString);
     }
 }
