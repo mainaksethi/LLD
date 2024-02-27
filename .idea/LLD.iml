@@ -13,6 +13,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Ludo/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SnakesAndLadders/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Splitwise/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Elevator/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MultiElevatorSystem/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
