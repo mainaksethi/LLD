@@ -15,6 +15,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Splitwise/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Elevator/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java_Data_Structures/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Multi-Threading/BlockingQueue/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Multi-Threading/RateLimitingTockenBucketFilter/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Multi-Threading/Semaphore/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Multi-Threading/Thread-Safe-Deferred-Callback/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MultiElevatorSystem/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
