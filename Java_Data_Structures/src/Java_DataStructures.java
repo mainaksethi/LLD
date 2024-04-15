@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.*;
 
 class DSNode {
@@ -216,5 +215,24 @@ class Scratch {
         String sortedString = new String(charArray);
 
         System.out.println("Printing sorted string: " + sortedString);
+
+        // C++ dequeue => Java deque
+        Deque<Integer> deque = new ArrayDeque<>();
+        deque.addLast(10);
+        deque.addLast(20);
+        deque.addLast(30);
+        System.out.println("Printing Deque Values: \n");
+        for (Integer val: deque) {
+            System.out.print(val + ",");
+        }
+        System.out.println();
+        System.out.println("Dequeue Front: " + deque.peekFirst());
+        deque.pollFirst();
+        System.out.println("Dequeue Front after popping first element: " + deque.peekFirst());
+        System.out.println("Dequeue Last: " + deque.peekLast());
+        deque.pollLast();
+        System.out.println("Dequeue Last after popping last element: " + deque.peekLast());
+        deque.addFirst(0);
+        System.out.println("Dequeue Inserting element at the beginning: " + deque.peekFirst());
     }
 }

@@ -1,12 +1,19 @@
 import java.time.Instant;
 import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.concurrent.ConcurrentSkipListSet;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ThreadSafeDeferredCallback {
-    
+
+    public ThreadSafeDeferredCallback() {
+        threadPool = Executors.newFixedThreadPool(10);
+    }
+
     private PriorityQueue<CallbackNode> pq = new PriorityQueue<>(new Comparator<CallbackNode>() {
         @Override
         public int compare(CallbackNode o1, CallbackNode o2) {
@@ -19,6 +26,8 @@ public class ThreadSafeDeferredCallback {
 
     private ReentrantLock lock = new ReentrantLock();
 
+    private ExecutorService threadPool;
+
     Condition newCallbackArrived = lock.newCondition();
 
     public void executeCallback() {
@@ -27,8 +36,7 @@ public class ThreadSafeDeferredCallback {
                 lock.lock();
                 while(!pq.isEmpty() && pq.peek().at < Instant.now().getEpochSecond()) {
                     CallbackNode callbackNode = pq.peek();
-                    // TODO: can run in another thread
-                    callbackNode.callback.runnable.run();
+                    threadPool.submit(callbackNode.callback.runnable);
                     pq.poll();
                 }
                 try {
@@ -53,7 +61,7 @@ public class ThreadSafeDeferredCallback {
 
     }
 
-    public synchronized void registerCallback(CallbackNode callbackNode) {
+    public void registerCallback(CallbackNode callbackNode) {
         lock.lock();
         pq.add(callbackNode);
         newCallbackArrived.signal();

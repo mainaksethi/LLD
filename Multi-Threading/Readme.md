@@ -15,3 +15,7 @@ picked from educative.io website.
        }
     }
    ```
+2. Normally we have tendency to make separate queues for consumers /
+   producers. But sometime its ok to have same lock across both /
+   and keep all threads in same queue. After waking up /
+   either of them will will proceed. Refer to ReadWriteLock problem.
