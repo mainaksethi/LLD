@@ -1,6 +1,15 @@
 import java.util.*;
 
 public class Main {
+
+    private static class DummyNode {
+        public Integer val;
+
+        public DummyNode(Integer val) {
+            this.val = val;
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Hello world!");
         // List
@@ -26,6 +35,23 @@ public class Main {
         System.out.println("Heaps top element: " + pq.peek());
         pq.poll();
         System.out.println("Heaps top element after removing 10: " + pq.peek());
+        // Priority Queue with Comparator, similar comparator is used in all data-structures of Java
+        PriorityQueue<DummyNode> pqWithDummyNode = new PriorityQueue<>(new Comparator<DummyNode>() {
+            @Override
+            public int compare(DummyNode o1, DummyNode o2) {
+                if (o1.val.equals(o2.val)) {
+                    return 0;
+                }
+                return o1.val > o2.val ? -1 : 1;
+            }
+        });
+        pqWithDummyNode.add(new DummyNode(2));
+        pqWithDummyNode.add(new DummyNode(1));
+
+        System.out.println("Heaps with dummyNode top element: " + pqWithDummyNode.peek().val);
+        pq.poll();
+        System.out.println("Heaps with dummyNode top element after removing 2: " + pqWithDummyNode.peek().val);
+
         // Linked-List
 //        ThreadSafeLinkedList<Integer> ll = new ThreadSafeLinkedList<>();
 //        ll.add(1);

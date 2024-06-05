@@ -19,8 +19,8 @@ import java.util.concurrent.ExecutionException;
 
 public class MultiThreadedWebCrawlerManager2 {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        MultiThreadedWebCrawler2 multiThreadedWebCrawler = new MultiThreadedWebCrawler2(10, new HtmlParser());
-        List<String> crawledUrls = multiThreadedWebCrawler.crawl("abc.com");
-        System.out.println(crawledUrls);
+//        MultiThreadedWebCrawler2 multiThreadedWebCrawler = new MultiThreadedWebCrawler2(10, new HtmlParser());
+//        List<String> crawledUrls = multiThreadedWebCrawler.crawl("abc.com");
+//        System.out.println(crawledUrls);
     }
 }
